@@ -14,14 +14,25 @@ $ sudo make install
 
 ## Usage
 
-To view all open ports for your current user. If the process belongs to another user, the process name and PID will be set to `*` and the username will be set to `?`.
-
 ```console
-$ oports
-```
+$ oports -h
+Usage: oports [FILTER]
 
-To view all open ports of all users.
+Available Filters
+  port    Filter by port number
+  proc    Filter by proccess name
+  pid     Filter by process ID
+  ip      Filter by IP
+  user    Filter by owning user
 
-```
-$ sudo oports
+Filter Syntax
+  <key>:<value>
+
+Example Usages
+  oports
+  oports proc:nc
+  oports ip:0.0.0.0
+
+If the process belongs to another user, the process name and PID will be set
+to '*' and the username will be set to '?'. Run using 'sudo' to view the values.
 ```

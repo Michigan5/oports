@@ -5,7 +5,38 @@
 # Wrapper around 'ss -tunlp' for a cleaner output.
 #
 
-{
+usage(){
+    echo "Usage: oports [FILTER]
+
+Available Filters
+  port    Filter by port number
+  proc    Filter by proccess name
+  pid     Filter by process ID
+  ip      Filter by IP 
+  user    Filter by owning user
+
+Filter Syntax
+  <key>:<value>
+
+Example Usages
+  oports
+  oports proc:nc
+  oports ip:0.0.0.0
+
+If the process belongs to another user, the process name and PID will be set
+to '*' and the username will be set to '?'. Run using 'sudo' to view the values."
+}
+
+list_open_ports() {
+    filter="$1"
+    filter_key="${filter%:*}"
+    filter_value="${filter#*:}"
+
+    # An associative array is needed so that we can keep track of which filter
+    # goes to which column. We're starting from 1 intead of 0 as 'awk' doesnt
+    # have array like index.
+    declare -A valid_filters=([port]=1 [proc]=2 [pid]=3 [ip]=4 [user]=5)
+
     # Extra padding is needed so that the underlines under the column heading
     # "User" matches the length for the longest line. 'useradd' has a maximum
     # username length of 32 characters. So by adding 32 extra whitespaces, we
@@ -37,9 +68,35 @@
         print port, process, pid, ip[1], user
     }' | sort -n)
 
+
+    if [[ -n "$filter" ]] && [[ -z "${valid_filters[$filter_key]}" ]]; then
+        echo "Invalid filter: $filter_key"
+        exit 1
+    fi
+
+    if [[ -n "$filter" ]]; then
+        output=$(awk "\$${valid_filters[$filter_key]} ~ /$filter_value/" <<< "$output")
+    fi
+
     [[ -z "$output" ]] && exit
 
-    echo -e "\e[1;37;4mPort Process PID IP User$extra_padding\e[0m"
-    echo "$output"
-    
-} | column -t -o "  "
+    {
+        echo -e "\e[1;37;4mPort Process PID IP User$extra_padding\e[0m"
+        echo "$output"
+    } | column -t -o "  "
+} 
+
+main(){
+    while [ "$1" ]; do
+        case "$1" in
+            --help | -h) usage && exit ;;
+            *:*) list_open_ports "$1" && exit ;;
+            -*) echo "Option '$1' does not exist" && exit 1;;
+        esac
+        shift
+    done
+
+    list_open_ports
+}
+
+main "$@"
