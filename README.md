@@ -7,7 +7,7 @@
 ## Installation
 
 ```console
-$ git clone git@github.com:sdushantha/oports.git
+$ git clone https://github.com/sdushantha/oports.git
 $ cd oports
 $ sudo make install
 ```
